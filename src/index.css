@@ -1,13 +1,205 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.tablebody{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin: 1rem;
+}
+
+.checkoutcontainer{
+  width: 100%;
+  /* border: 1px solid orange; */
+  display: flex;
+  justify-content: end;
+}
+.videocontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.videocontainer button {
+  border: none;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 12px;
+}
+.checkoutbutton{
+  margin-right: 18px;
+  border: none;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: #9aeb81;
+  font-weight: 500;
+  padding: 4px;
+}
+
+.mainheader{
+  display: flex;
+  border: 1px solid lightgray;
+  background-color: rgb(250, 234, 205);
+  border-radius: 12px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  position: sticky;
+  top: 12px;
+}
+.title{
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.headerbody{
+  /* border: 2px solid orange; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: end;
+  margin: 1rem;
+}
+
+.icon-container{
+  display: flex;
+  gap: 3rem;
+}
+.iconandlable{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.iconandlable label{
+  font-weight: 600;
+}
+.icons{
+  cursor: pointer;
+  width: 40px;
+}
+.tablebody {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  /* border: 2px solid black; */
+}
+.table{
+  width: 100%;
+  height: 60vh;
+  /* border: 2px solid black; */
+}
+
+.richtext{
+  position: relative;
+  /* border: 1px solid black; */
+  padding: 0px;
+  margin-top: 10px;
+  border-radius: 12px;
+  height: 500px;
+}
+
+
+.custom-quill .ql-container {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.ReactQuill{
+  border: 1px solid black;
+  position: absolute;
+  border:none;
+  height: 400px;
+  width: 100%;
+  /* border: 1px solid orange; */
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: 500;
+}
+
+form input {
+  padding: 6px;
+  border-radius: 12px;
+  border: none;
+  border: 1px solid black;
+}
+form textarea {
+  padding: 6px;
+  border-radius: 12px;
+  border: none;
+  border: 1px solid black;
+}
+form select {
+  padding: 6px;
+  border-radius: 12px;
+  border: none;
+  border: 1px solid black;
+}
+
+form button{
+  width: 25%;
+  margin: 10px auto;
+  cursor: pointer;
+  border: none;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 6px;
+  background-color:rgb(143, 132, 153) ;
+}
+
+.articlebody{
+  
+}
+
+.article{
+  margin: 2% auto;
+  width: 80%;
+  height: auto;
+  overflow-y: auto;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.articletitle{
+  text-align: center;
+  font-weight: 600;
+}
+.id{
+  font-size: 22px;
+  color: rgb(61, 61, 61);
+}
+.Category{
+  font-weight: 500;
+}
+
+.section{
+  font-weight: 400;
+}
+
+
+.access{
+  font-weight: 500;
+  text-align: right;
+  font-size: 20px;
+}
+.author{
+  text-align: right;
+  font-size: 22px;
+  font-weight: 600;
 }
